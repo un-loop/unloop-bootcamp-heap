@@ -1,0 +1,30 @@
+{
+  "name": "heap",
+  "version": "1.0.0",
+  "description": "Binary Min Heap implementation",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc",
+    "test": "jest",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm.cmd run compile",
+    "pretest": "npm.cmd run compile",
+    "posttest": "npm.cmd run check"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "@types/node": "^13.11.1",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3",
+    "gts": "^2.0.2"
+  }
+}
